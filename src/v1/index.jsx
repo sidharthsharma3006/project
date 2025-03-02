@@ -1,7 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { folderName } from "./config";
 
-const V1Page = () => {
-  return <h1>This is 1.14 Page</h1>;
+
+const Page = () => {
+  return (
+    <div>
+      <h1>This is 1.15 page</h1>
+      <Link to={`/${folderName}/support`}>Go to Support</Link>; 
+    </div>
+  );
 };
 
-export default V1Page;
+export default Page;
